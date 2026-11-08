@@ -79,6 +79,28 @@ between-pages/
 
 ---
 
+## 📱 Mobile Responsiveness & iPhone Optimization
+
+The application has been extensively tested and optimized for mobile devices, specifically engineered for iPhone screens (with iPhone 390px as the primary mobile reference) as well as tablets and desktops:
+
+- **Safe Area Insets**: Native support for iPhone notch, Dynamic Island, and bottom gesture home bar using `viewport-fit=cover` and CSS `env(safe-area-inset-*)`.
+- **Zero Horizontal Overflow**: Guaranteed fit across all screens with strict boundary guards and fluid flex/grid layouts.
+- **Collapsible Navigation Drawer**: Smooth slide-out mobile navigation drawer with backdrop blur, dedicated close button, and generous touch targets (≥44px) preventing icon/text collisions.
+- **Adaptive Summary Cards**: Dynamic 2-column layout on standard phones (176px width per card on 390px iPhone) and 1-column layout on extra narrow screens (≤360px).
+- **Proportional Book Cards**: Responsive book cards with gracefully wrapped action buttons ("View Details", Edit, Delete) preventing layout breaks.
+- **Mobile-Optimized Modals & Forms**: Full-height dynamic viewport scaling (`100dvh`), vertically stacked input fields on mobile, sticky action footers, and `16px` form inputs to prevent iOS Safari auto-zooming.
+- **Verified Breakpoints**:
+  - 320px (iPhone SE 1st Gen)
+  - 375px (iPhone SE 2nd/3rd Gen, iPhone X/XS/11 Pro/12 mini/13 mini)
+  - 390px (iPhone 12/13/14/15/16 Pro — primary reference)
+  - 430px (iPhone Pro Max / Plus)
+  - 768px (iPad Portrait)
+  - 1024px (iPad Landscape / Desktop)
+  - Landscape orientation (844x390)
+
+---
+
 ## 🚀 Getting Started
 
-Simply open `index.html` in any modern web browser (Chrome, Firefox, Safari, Edge). No build steps or server setup required!
+Simply open `index.html` in any modern web browser (Chrome, Firefox, Safari, Edge) or access the live GitHub Pages deployment. No build steps or server setup required!
+

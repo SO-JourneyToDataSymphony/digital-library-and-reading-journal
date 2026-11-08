@@ -3184,6 +3184,9 @@ function setupEventListeners() {
   const mobileToggle = document.getElementById('mobileMenuToggle');
   if (mobileToggle) mobileToggle.addEventListener('click', openMobileMenu);
 
+  const sidebarCloseBtn = document.getElementById('sidebarCloseBtn');
+  if (sidebarCloseBtn) sidebarCloseBtn.addEventListener('click', closeMobileMenu);
+
   const backdrop = document.getElementById('sidebarBackdrop');
   if (backdrop) backdrop.addEventListener('click', closeMobileMenu);
 
